@@ -26,3 +26,17 @@
 
 <!-- then our app's own js file -->
 <script src="js/main.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/5.9.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: '<%= process.env.API_KEY %>', // this references the API_KEY environemnt variable!
+    authDomain: "young-bastion-database.firebaseapp.com",
+    databaseURL: "https://young-bastion-database.firebaseio.com",
+    projectId: "young-bastion-database",
+    storageBucket: "young-bastion-database.appspot.com",
+    messagingSenderId: "941252592436"
+  };
+  firebase.initializeApp(config);
+</script>
